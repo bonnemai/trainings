@@ -1,11 +1,4 @@
 
-
-
-# def partition(arr, low, high): 
-#     for i in range(low, high):
-#         if arr[i]>arr[high]:
-#             arr[i], arr[high]=arr[high], arr[i]
-#     return i+1
 def quick_sort(arr):
     if len(arr)<=1:
         return arr

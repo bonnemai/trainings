@@ -21,5 +21,7 @@ for e in edges:
     adj[e[0]].append(e[1])
     adj[e[1]].append(e[0])
 
+# adj=[[1, 2], [0, 2], [0, 1, 3, 4], [2], [2]]
+
 rec=dfs(adj)
 print(rec)
