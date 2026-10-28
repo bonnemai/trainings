@@ -9,9 +9,9 @@ def partition(arr, low, high):
     return i+1
 def quick_sort(arr, low, high):
     if low<high: 
-        pi=partition(arr, low, high)
-        quick_sort(arr, low, pi-1)
-        quick_sort(arr, pi+1, high)
+        pivot=partition(arr, low, high)
+        quick_sort(arr, low, pivot-1)
+        quick_sort(arr, pivot+1, high)
 
 arr=[1,2,3,4,5]
 quick_sort(arr, 0,len(arr)-1 )
